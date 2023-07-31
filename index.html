@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GPA Calculator</h1>
+        <form id="gpaForm">
+            <div class="input-group">
+                <label for="courseName">Course Name:</label>
+                <input type="text" id="courseName" required>
+            </div>
+            <div class="input-group">
+                <label for="grade">Grade:</label>
+                <select id="grade" required>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="F">F</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="creditHours">Credit Hours:</label>
+                <input type="number" id="creditHours" min="1" required>
+            </div>
+            <button type="button" id="addCourse">Add Course</button>
+            <button type="button" id="calculateGPA">Calculate GPA</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
